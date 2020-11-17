@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
   commentForm.addEventListener(
     "submit",
     function(e) {
-      commentForm.prevent
+      e.preventDefault();
       let newComment = document.createElement("P");
       newComment.innerText = commentBox.value;
       commentBox.value = "";
